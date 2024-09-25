@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+}
+
+/****************************************************
+BARRA DE ROLAGEM
+**********************************************/
+html ::-webkit-scrollbar {
+      width: 5px;
+}
+
+html ::-webkit-scrollbar-thumb {
+      background: orangered;
+}
+
+html ::-webkit-scrollbar-track {
+      background: #ededed;
+}
+
+
+/**********************************************
+HEADER
+**********************************************/
+body {
+      overflow-x: hidden;
+}
+
+header {
+      position: relative;
+      z-index: 2;
+      width: 86%;
+      left: 40px;
+      margin: auto;
+      animation: animationnav 1.8s;
+}
+
+header ul {
+      gap: 10%;
+      align-items: center;
+      position: relative;
+      top: 8px;
+      right: 10px;
+}
+
+header ul a {
+      text-decoration: none;
+      color: #f4511e;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.3s;
+      font-size: 100%;
+      cursor: pointer;
+}
+
+header ul a:hover {
+      font-weight: 700;
+      transition: all 0.3s;
+}
+
+header nav {
+      background-color: white;
+      width: 90%;
+      padding: 5px 12px;
+      position: relative;
+      top: -2px;
+      left: -140px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.11);
+}
+
+header h2 {
+      color: white;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+      width: 90%;
+      font-size: 40px;
+}
+
+@keyframes animationnav {
+      from {
+            top: -60px;
+      }
+
+      to {
+            top: -2px;
+      }
+
+}
+
+.banner-principal h1 {
+      font-weight: 700;
+      color: white;
+      text-align: left;
+      font-size: 41px;
+      width: 445px;
+}
+
+.perfil {
+      width: 700px;
+      position: absolute;
+      top: -9%;
+      left: 42%;
+      filter: drop-shadow(2px 4px 6px black);
+      transform: rotate(-8deg);
+}
+
+.banner-principal p {
+      width: 64%;
+      text-align: left !important;
+      float: left;
+      color: white !important;
+      font-weight: 500;
+      font-size: 21px;
+}
+
+/*******************************************
+ Banner Principal
+********************************************/
+
+.banner-principal {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: -95px;
+      background: #f4511e;
+      overflow: hidden;
+      padding-top: 63px;
+      padding-bottom: 112px;
+      z-index: 1;
+      border-bottom-left-radius: 22%;
+}
+
+.text1 p {
+      width: 80%;
+      padding-top: 20px;
+      color: #737070;
+      font-weight: 500;
+}
+
+.text1 h2 {
+      width: 82%;
+      font-weight: 700;
+      font-size: 40px;
+      color: #f4511e;
+}
+
+
+.Sobre {
+      background: #f4511e;
+      color: white;
+      padding: 1% 0px;
+      position: relative;
+      top: 200px;
+      z-index: 1;
+      margin-bottom: 69px;
+
+}
+
+.Sobre p {
+      font-size: 22px;
+      font-weight: 200;
+      text-align: left;
+}
+
+
+.Sobre img {
+      width: 68%;
+    position: relative;
+    transform: rotate(-7deg);
+    filter: drop-shadow(2px 4px 6px black);
+    right: -136px;
+}
+
+
+
+
+.mobile {
+      display: none;
+}
+
+.banner-principal .btn-white a {
+      text-decoration: none;
+      color: orangered;
+      padding: 11px 11%;
+      background-color: white;
+      position: relative;
+      top: 12px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: all 0.3s;
+      font-size: 17px;
+      cursor: pointer;
+}
+
+.banner-principal .btn-white a:hover {
+      font-weight: 700;
+      transition: all 0.3s;
+}
+
+.text1 .btn-laranja {
+      text-decoration: none;
+      background-color: #f4511e;
+      color: white;
+      font-weight: 700;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      padding: 12px 24%;
+      top: 27px;
+      border-radius: 10px;
+      text-align: center;
+      margin: auto;
+      transition: all 0.4s;
+}
+
+.text1 .btn-laranja:hover {
+      background-color: #dc491c;
+      transition: all 0.4s;
+}
+
+
+.content1 {
+      position: relative;
+      top: 77px;
+}
+
+.img1 img {
+      width: 61%;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      display: block;
+      top: -131px;
+}
+
+.Sobre .btn-laranja{
+      text-decoration: none;
+    background: white;
+    color: orangered;
+    font-weight: 600;
+    padding: 2% 11%;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.Sobre .btn-laranja:hover{
+      background: rgb(230, 229, 229);
+      transition: all 0.3s;
+}
+
+
+.card{
+      position: relative;
+      top: 440px;
+      filter: drop-shadow(2px 4px 6px rgba(113, 113, 113, 0.389));
+      border: none;
+      border-radius: 20px;
+      width: 90%;
+      margin: auto;
+      transition: all 0.5s;
+      cursor: pointer;
+}
+
+.card:hover{
+      transform: scale(1.1);
+      transition: all 0.5s;
+}
+
+
+
+.card  .card-header{
+      text-align: center;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      border: none;
+      background-color: white;
+      border-radius: 47px;
+}
+.cards .card-header .circle{
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+      background-color:#f4511e;
+      width: 130px;
+      height: 130px;
+      border-radius: 100%;
+      margin: auto;
+      position: relative;
+      top: -70px;
+      filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.249));
+}
+
+.cards .card-header .circle img{
+      width: 100%;
+      filter: invert(1);
+      padding: 10px;
+      transition: all 0.5s;
+      cursor: pointer;
+}
+
+.cards .card-header .circle img:hover{
+      transform: scale(1.2);
+      transition: all 0.5s;
+}
+
+.cards .card-body{
+      text-align: center;
+      padding: 30px;
+      position: relative;
+      top: 10px;
+}
+.cards .card-body span{
+      font-size: 21px;
+    font-weight: 500;
+    color: #f4511e;
+}
+.cards .card-body h2{
+      font-size: 37px;
+      font-weight: 700;
+      color: rgb(61, 61, 61);
+}
+
+.cards .card-header .circle p{
+      width: 91%;
+    margin: auto;
+}
+
+.cards .btn-laranja{
+      text-decoration: none;
+      background-color: #f4511e;
+      color: white;
+      font-size: 20px;
+      display: block;
+      width: 20%;
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: all 0.5s;
+      margin: auto;
+      position: relative;
+      text-align: center;
+      top: 500px;
+}
+.cards .btn-laranja:hover{
+      background-color: #f4501ee1;
+      transition: all 0.5s;
+}
+
+.cards .title-2{
+      position: relative;
+    top: 300px;
+    text-align: center;
+}
+
+
+.cards .title-2 span{
+      font-size: 20px;
+    font-weight: 500;
+}
+.cards .title-2 h2{
+      font-size: 30px;
+      font-weight: 700;
+      color: orangered;
+      margin: auto;
+}
+
+footer{
+      width: 100%;
+    height: 452px;
+    background-color: #f4511e;
+    position: relative;
+    top: 500px;
+    padding-top: 110px;
+     
+}
+footer .logo{
+      width: 50%;
+      border-radius: 50%;
+}
+.mapa{
+      position: relative;
+      top:650px;
+}
+
+footer .content-footer-1 h2{
+      font-size: 18px;
+      font-weight: 400;
+      color: white;
+      width: 87%;
+}
+
+footer .content-footer-1 span{
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      position: relative;
+      top: -10px;
+}
+
+footer .btn-zap{
+      background-image: -webkit-linear-gradient(90deg, rgb(39, 180, 62) 0%, rgb(90, 210, 102) 100%);
+      color: white;
+      text-decoration: none;
+      width: 70%;
+      display: block;
+      text-align: center;
+      padding: 10px;
+      border-radius: 20px;
+      font-weight: 700;
+      margin-top: 20px;
+}
+
+
+  
+footer .instagram img{
+      width: 15%;
+      object-fit: cover;
+      filter: invert();
+}
+footer .instagram{
+      align-items: center;
+      gap: 5px;
+      width: 44%;
+}
+footer a{
+      text-decoration: none;
+}
+footer .instagram span{
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+}
+footer .title-2{
+      font-size: 18px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    top: -15px;
+}
+
+
+
+
+
+@media screen and (max-width: 1399px) {
+      .Sobre {
+            background-color: #dc491c;
+            color: white;
+            padding: 4% 0px;
+            position: relative;
+            top: 200px;
+        }
+}
+
+
+@media screen and (max-width: 1426px) {
+      .desktop {
+            display: none;
+      }
+
+      .mobile {
+            display: block;
+      }
+
+      .mobile .menu0pen {
+            width: 40px;
+            filter: invert(1);
+            cursor: pointer;
+      }
+
+      .content-mobile {
+            background-color: white;
+            position: absolute;
+            width: 50%;
+            height: auto;
+            right: 14%;
+            padding: 30px;
+            top: 80px;
+            display: inline-grid;
+            text-align: right;
+            border-radius: 20px;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.11);
+            top: -200px;
+            transition: all 0.6s;
+      }
+
+      .content-mobile a {
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #f4511e;
+            font-weight: 600;
+            width: 30%;
+            position: relative;
+            right: -70%;
+      }
+
+}
+
+@media screen and (max-width: 992px) {
+
+      header {
+            position: relative;
+            z-index: 2;
+            width: 86%;
+            left: 25px;
+            margin: auto;
+            animation: animationnav 1.8s;
+            padding: 24px 0px;
+      }
+
+      .banner-principal {
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: -134px;
+            background: linear-gradient(to bottom, #f9a825, #f4511e);
+            overflow: hidden;
+            padding-top: 72px;
+      }
+
+      .banner-principal h1 {
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            width: 100% !important;
+            font-size: 29px;
+            margin-bottom: 46px;
+      }
+
+      .banner-principal p {
+            width: 100%;
+            text-align: center !important;
+            position: relative;
+            color: white !important;
+            top: 10px;
+            padding: 0px;
+      }
+
+      .banner-principal .btn-white a {
+            text-decoration: none;
+            color: orangered;
+            padding: 9px 23%;
+            background-color: white;
+            position: relative;
+            top: 12px;
+            border-radius: 10px;
+            font-weight: 700;
+            z-index: 1;
+            width: 100%;
+      }
+
+
+      .banner-principal {
+            width: 100%;
+            height: 1091px;
+            position: relative;
+            top: -129px;
+            background: #f4511e;
+            overflow: hidden;
+            padding-top: 100px !important;
+            border-bottom-left-radius: 0px;
+
+      }
+
+      .btn-white {
+            position: relative;
+            left: 1%;
+            top: 10px;
+      }
+
+      header h2 {
+            color: white;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            width: 110%;
+            font-size: 30px;
+      }
+
+      .perfil {
+            width: 492px;
+            position: absolute;
+            top: 86%;
+            left: 48%;
+            transform: translate(-50%, -50%) rotate(-8deg);
+            filter: drop-shadow(2px 4px 6px black);
+      }
+
+      .text1 p {
+            width: 80%;
+            padding-top: 20px;
+            color: #737070;
+            font-weight: 500;
+            text-align: justify;
+            margin: auto;
+      }
+
+      .text1 h2 {
+            text-align: center;
+            margin: auto;
+            position: relative;
+            top: -40px;
+      }
+
+
+      .text1 .btn-laranja {
+            text-decoration: none;
+            background-color: #f4511e;
+            color: white;
+            font-weight: 700;
+            width: 84%;
+            position: relative;
+            z-index: 2;
+            top: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px auto;
+            display: block;
+            cursor: pointer !important;
+      }
+
+      .text1 h2 {
+            text-align: center;
+            margin: auto;
+            position: relative;
+            top: -40px;
+            font-size: 28px;
+      }
+
+      .Sobre {
+            background: #f4511e;
+            color: white;
+            padding: 20% 17px;
+            position: relative;
+            top: 200px;
+            
+      }
+
+      .Sobre p {
+            font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        position: relative;
+      }
+
+      .Sobre img {
+            width: 100%;
+            transform: rotate(-7deg);
+            filter: drop-shadow(2px 4px 6px black);
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            display: block;
+            position: relative;
+            top: 0px;
+            left: 3%;
+      }
+
+      .Sobre .btn-laranja{
+            text-decoration: none;
+            background: white;
+            color: orangered;
+            font-weight: 600;
+            padding: 4% 11%;
+            position: relative;
+            top: 20px;
+            border-radius: 10px;
+            width: 100%;
+            display: block;
+            text-align: center;
+      }
+
+      .card {
+            position: relative;
+            top: 400px;
+            filter: drop-shadow(2px 4px 6px rgba(113, 113, 113, 0.389));
+            border: none;
+            border-radius: 20px;
+            width: 90%;
+            margin: 62px auto;
+        }
+
+        .cards .btn-laranja{
+            text-decoration: none;
+            background-color: #f4511e;
+            color: white;
+            font-size: 20px;
+            display: block;
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.5s;
+            margin: auto;
+            position: relative;
+            text-align: center;
+            top: 400px;
+      }
+
+      .card:hover{
+            transform: scale(1.1);
+            transition: all 0.5s;
+      }
+
+      .Sobre h2{
+            text-align: center;
+            margin-bottom: 35px;
+            font-weight: 700;
+      }
+
+      .cards{
+            position: relative;
+            top: -70px;
+      }
+
+      footer{
+            width: 100%;
+        height: auto;
+        background-color: #f4511e;
+        position: relative;
+        top: 300px;
+        padding: 54px 47px;
+           
+      }
+      .mapa{
+            position: relative;
+            top:450px;
+      }
+
+      footer .content-footer-1 span {
+            font-size: 18px;
+        font-weight: 700;
+        color: white;
+        position: relative;
+        top: -10px;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding-top: 42px;
+        }
+
+        footer .content-footer-1 h2 {
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding-bottom: 34px;
+        }
+
+        footer .btn-zap {
+            background-image: -webkit-linear-gradient(90deg, rgb(39, 180, 62) 0%, rgb(90, 210, 102) 100%);
+            color: white;
+            text-decoration: none;
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        footer .logo {
+            width: 50%;
+            border-radius: 50%;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+            display: block;
+        }
+   
+        footer .title-2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+            position: relative;
+            top: -15px;
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        footer .instagram {
+            align-items: center;
+            gap: 5px;
+            width: 100%;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+        footer .instagram span {
+            color: white;
+            text-decoration: none;
+            font-size: 29px;
+        }
+}
